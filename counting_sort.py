@@ -11,9 +11,20 @@ def counting_sort(lst, k):
     :return: a list of sorted integers
     """
     tmp = [0] * k  # tmp is a temporary list;
+    result = [0] * len(lst)
     for i in lst:
         tmp[i] += 1
     for i in xrange(1, k):
         tmp[i] += tmp[i-1]
-    for i in range(k).reverse():
-        lst[]
+    print "The tmp is:", tmp
+    for i in range(len(lst))[::-1]:
+        result[tmp[lst[i]]-1] = lst[i]
+        tmp[lst[i]] -= 1
+        print "The tmp is:", tmp
+        print "The result is:", result
+    return result
+
+if __name__ == "__main__":
+    lst = [8, 3, 23, 22, 4, 18, 11]
+    k = 25
+    print counting_sort(lst, k)
