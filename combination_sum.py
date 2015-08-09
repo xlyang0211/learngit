@@ -3,6 +3,7 @@ class Solution:
     # @param target, integer
     # @return a list of lists of integers
     def combinationSum(self, candidates, target):
+<<<<<<< HEAD
         candidates.sort(reverse=False)
         print candidates
         lst = []
@@ -43,3 +44,23 @@ if __name__ == "__main__":
     target = 2
     solution = Solution()
     print solution.combinationSum(my_list, target)
+=======
+        self.sort(candidates)
+
+
+
+    def sort(self, list, b, c):
+        """
+        Use quick sort to sort candidates ascendingly.
+        :param candidates: The list of integers
+        :param b: beginning index
+        :param c: last index
+        :return: None
+        """
+        i = 0  # mark the next position that the element
+        j = 0
+        pivot = list[b]
+        for i in xrange(b, c):
+            j = i + 1
+            if
+>>>>>>> 1f33a455313b490408713921ee3fcc8211a33488
