@@ -14,8 +14,6 @@ class Solution:
                     result[j] = "0"
         return int("".join(result), 2)
 
-
-
 if __name__ == "__main__":
     solution = Solution()
     print solution.rangeBitwiseAnd(0, 2147483647)
