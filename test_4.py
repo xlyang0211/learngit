@@ -1,12 +1,10 @@
 def main(x):
-    hello_world()
-    print "x is:", x
+    print x
+    x = [2, 3, 4]
+    print x
 
-def hello_world():
-    print "Hello world!"
 
 if __name__ == "__main__":
-    x = 1
+    x = [5, 5, 5]
     main(x)
-    import sys
-    print sys.getdefaultencoding()
+    print x

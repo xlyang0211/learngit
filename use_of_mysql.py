@@ -8,7 +8,7 @@ conn = MySQLdb.connect(
         port = 3306,
         user = 'root',
         passwd = 'babygift_49139',
-        db = 'test',
+        db = 'test.cpp',
         )
 cur = conn.cursor()
 cur.execute('use world')
