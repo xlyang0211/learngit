@@ -3,6 +3,8 @@
 # to locate the position to insert into, you need to move index every time, and the head may change after every
 # insertion;
 
+# To submit this method to leetcode will get a Time Exceed error. Please refer to insertion_sort_list_II for a
+# better algorithm;
 
 # Definition for singly-linked list.
 class ListNode(object):
